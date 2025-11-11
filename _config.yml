@@ -1,11 +1,16 @@
 remote_theme: just-the-docs/just-the-docs@v0.10.1
+
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Site settings
 title: "Kasper Brandenburg"
 description: "Knowledge Base & Security Research"
 url: "https://www.kasperbrandenburg.dk"
+baseurl: ""
 
 # Just the Docs theme settings
 search_enabled: true
@@ -27,12 +32,6 @@ footer_content: "Copyright &copy; 2025 Kasper Brandenburg. Distributed under an 
 # Color scheme (light, dark, or auto)
 color_scheme: auto
 
-# Google Analytics (if you want)
-# google_analytics: UA-NNNNNNNN-N
-
-# Enable or disable the site search
-search_enabled: true
-
 # Aux links for the upper right navigation
 aux_links:
   "View on GitHub":
@@ -40,3 +39,12 @@ aux_links:
 
 # Makes Aux links open in a new tab
 aux_links_new_tab: true
+
+# GitHub Pages / Jekyll settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
