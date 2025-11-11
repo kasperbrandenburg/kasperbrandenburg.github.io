@@ -1,1 +1,42 @@
-theme: jekyll-theme-slate
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+plugins:
+  - jekyll-remote-theme
+
+# Site settings
+title: "Kasper Brandenburg"
+description: "Knowledge Base & Security Research"
+url: "https://www.kasperbrandenburg.dk"
+
+# Just the Docs theme settings
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Navigation structure
+nav_sort: case_insensitive
+
+# Footer settings
+footer_content: "Copyright &copy; 2025 Kasper Brandenburg. Distributed under an <a href=\"https://github.com/kasperbrandenburg/kasperbrandenburg.github.io/blob/main/LICENSE\">MIT license.</a>"
+
+# Color scheme (light, dark, or auto)
+color_scheme: auto
+
+# Google Analytics (if you want)
+# google_analytics: UA-NNNNNNNN-N
+
+# Enable or disable the site search
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "View on GitHub":
+    - "https://github.com/kasperbrandenburg/kasperbrandenburg.github.io"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
