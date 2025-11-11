@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: list
 title: Security Advisories
-nav_order: 3
-has_children: true
-description: "Security vulnerability disclosures and advisories"
+menu: true
+order: 3
+description: >
+  Security vulnerability disclosures and advisories following responsible disclosure practices.
 ---
 
 # Security Advisories

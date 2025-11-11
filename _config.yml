@@ -1,26 +1,72 @@
-remote_theme: just-the-docs/just-the-docs
+remote_theme: hydecorp/hydejack@v9
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
 
 # Site settings
+lang: en
 title: "Kasper Brandenburg"
 description: "Knowledge Base & Security Research"
+tagline: "Cybersecurity Research & Vulnerability Disclosures"
+keywords: ["cybersecurity", "security research", "vulnerability disclosure", "Denmark"]
 url: "https://www.kasperbrandenburg.dk"
+baseurl: ""
 
-# Just the Docs theme settings  
-search_enabled: true
+# Blog
+blog_url: /blog/
+paginate: 10
+paginate_path: /blog/:num/
 
-# Navigation structure
-nav_sort: case_insensitive
+# Collections
+collections:
+  advisories:
+    permalink: /advisories/:name/
+    output: true
 
-# Footer settings
-footer_content: "Copyright &copy; 2025 Kasper Brandenburg."
+# Menu
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Security Advisories
+    url: /advisories/
+  - title: Contact
+    url: /contact/
 
-# Aux links for the upper right navigation
-aux_links:
-  "View on GitHub":
-    - "https://github.com/kasperbrandenburg/kasperbrandenburg.github.io"
+# Author
+author:
+  name: Kasper Brandenburg
+  email: # Add your email if you want
+  social:
+    github: kasperbrandenburg
 
-# Makes Aux links open in a new tab
-aux_links_new_tab: true
+# Theme settings
+accent_image:
+  background: 'linear-gradient(to bottom, #193747 0%, #233e4c 30%, #3c929e 100%)'
+accent_color: '#4fb3d9'
+theme_color: '#193747'
+
+# Sidebar
+sidebar:
+  sticky: true
+
+# Comments (disabled for security site)
+disqus: false
+comments: false
+
+# Google Analytics (uncomment if needed)
+# google_analytics: UA-XXXXXXXX-X
+
+# SEO settings
+twitter:
+  username: # your twitter handle
+  
+# Legal
+copyright: "© 2025 Kasper Brandenburg. All rights reserved."
+
+# Build settings  
+markdown: kramdown

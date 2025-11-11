@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: page
 title: Contact
-nav_order: 4
-description: "Contact information for security research and inquiries"
+menu: true
+order: 4
+description: >
+  Contact information for security research inquiries and vulnerability reporting guidelines.
 ---
 
 # Contact Information

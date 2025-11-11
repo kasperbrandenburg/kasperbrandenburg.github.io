@@ -1,8 +1,11 @@
 ---
-layout: default
-title: About Me
-nav_order: 2
-description: "About Kasper Brandenburg - Cybersecurity Researcher"
+layout: about
+title: About
+menu: true
+order: 2
+description: >
+  About Kasper Brandenburg - Cybersecurity researcher based in Denmark specializing in 
+  vulnerability research and responsible disclosure.
 ---
 
 # About Kasper Brandenburg
